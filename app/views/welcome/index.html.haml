@@ -1,1 +1,18 @@
-%h1 Hello! This is a place holder!
+#banner
+  .banner_content
+    %h1 File cabinet
+    %p Your life's work. Organized, always.
+    %button= link_to "Enter", new_user_registration_path
+
+  #callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Origanize
+        %p Something interesting going to happen.
+
+  #bottom_cta
+    .wrapper
+      %h2 Go Ahead!
+      %br
+        %button= link_to "Join now", new_user_registration_path
