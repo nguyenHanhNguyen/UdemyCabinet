@@ -9,7 +9,7 @@
     %body
       %header
         .header_inner
-          =link_to "File Cabinet", root_path
+          =link_to "FileCabinet", root_path
 
           %nav
             - if user_signed_in?
@@ -18,8 +18,8 @@
             - else
               = link_to "Log in", new_user_session_path
 
-      -#%p.notice = notice
-      -#%p.alert = alert
+      %p.notice= notice
+      %p.alert= alert
 
       = yield
 
